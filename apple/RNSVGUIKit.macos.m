@@ -1,5 +1,5 @@
 #import "RNSVGUIKit.h"
-
+#if TARGET_OS_OSX
 @implementation RNSVGView
 {
     NSColor *_tintColor;
@@ -46,7 +46,6 @@
 
 @end
 
-
 @implementation NSImage (RNSVGMacOSExtensions)
 
 - (CGImageRef) CGImage
@@ -84,3 +83,4 @@
 }
 
 @end
+#endif

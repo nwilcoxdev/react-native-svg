@@ -1,5 +1,5 @@
 #import "RNSVGTopAlignedLabel.h"
-
+#if TARGET_OS_OSX
 @implementation RNSVGTopAlignedLabel
 
 - (NSAttributedString *)attributedText
@@ -53,3 +53,4 @@
 }
 
 @end
+#endif
